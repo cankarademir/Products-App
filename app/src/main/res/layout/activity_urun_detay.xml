@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrunDetayActivity">
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtDetailModel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textColor="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="@+id/imgDetail"
+        app:layout_constraintStart_toStartOf="@+id/imgDetail"
+        app:layout_constraintTop_toBottomOf="@+id/imgDetail" />
+
+    <TextView
+        android:id="@+id/txtDetailDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/txtDetailModel"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/txtDetailModel"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetailModel" />
+
+    <TextView
+        android:id="@+id/txtDetailPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/detailRating"
+        app:layout_constraintStart_toStartOf="@+id/txtDetailDesc"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetailDesc" />
+
+    <TextView
+        android:id="@+id/txtDetailDiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/txtDetailStock"
+        app:layout_constraintStart_toStartOf="@+id/txtDetailPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetailPrice" />
+
+    <TextView
+        android:id="@+id/txtDetailStock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/detailRating"
+        app:layout_constraintStart_toEndOf="@+id/txtDetailDiscount"
+        app:layout_constraintTop_toBottomOf="@+id/detailRating" />
+
+    <TextView
+        android:id="@+id/detailRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/txtDetailDesc"
+        app:layout_constraintStart_toEndOf="@+id/txtDetailPrice"
+        app:layout_constraintTop_toBottomOf="@+id/txtDetailDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
